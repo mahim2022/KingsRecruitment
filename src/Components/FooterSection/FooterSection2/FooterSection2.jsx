@@ -7,18 +7,18 @@ import ButtonGroup from "@mui/material/ButtonGroup";
 
 function FooterSection2() {
 	return (
-		<>
+		<div style={{ width: "100%" }}>
 			<Link href="#" underline="none">
 				<h1>Link</h1>
 			</Link>
-			<Typography style={{ width: "50%" }}>
+			<Typography>
 				Bashati Horizon, Flat - A12, Room No. - 02 House No. 21, Road No. - 17,
 				Banani R/A, Dhaka-1213.
 			</Typography>
 			<Link href="#" underline="none">
 				<h1>Link</h1>
 			</Link>
-			<Typography style={{ width: "50%" }}>
+			<Typography>
 				Rupayan Trade Center (11th Floor) 114, Kazi Nazrul Islam Avenue Bangla
 				Motor, Dhaka-1000.
 			</Typography>
@@ -34,7 +34,7 @@ function FooterSection2() {
 				<Button>Twitter</Button>
 				<Button>LinkedIn</Button>
 			</ButtonGroup>
-		</>
+		</div>
 	);
 }
 

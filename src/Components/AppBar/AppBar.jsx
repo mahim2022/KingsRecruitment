@@ -13,7 +13,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 
-const pages = ["Products", "Pricing", "Blog"];
+const pages = ["We Serve", "Global", "Recruitement Process", "Contact Us"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
@@ -36,8 +36,8 @@ function ResponsiveAppBar() {
 	};
 
 	return (
-		<AppBar position="static">
-			<Container maxWidth="xl">
+		<AppBar position="static" color="transparent">
+			<Container maxWidth="false">
 				<Toolbar disableGutters>
 					<AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
 					<Typography
@@ -88,7 +88,11 @@ function ResponsiveAppBar() {
 							}}
 						>
 							{pages.map((page) => (
-								<MenuItem key={page} onClick={handleCloseNavMenu}>
+								<MenuItem
+									style={{ color: "black" }}
+									key={page}
+									onClick={handleCloseNavMenu}
+								>
 									<Typography textAlign="center">{page}</Typography>
 								</MenuItem>
 							))}
@@ -107,7 +111,7 @@ function ResponsiveAppBar() {
 							fontFamily: "monospace",
 							fontWeight: 700,
 							letterSpacing: ".3rem",
-							color: "inherit",
+							color: "black",
 							textDecoration: "none",
 						}}
 					>
@@ -118,14 +122,14 @@ function ResponsiveAppBar() {
 							<Button
 								key={page}
 								onClick={handleCloseNavMenu}
-								sx={{ my: 2, color: "white", display: "block" }}
+								sx={{ my: 2, color: "black", display: "block" }}
 							>
 								{page}
 							</Button>
 						))}
 					</Box>
 
-					<Box sx={{ flexGrow: 0 }}>
+					{/* <Box sx={{ flexGrow: 0 }}>
 						<Tooltip title="Open settings">
 							<IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
 								<Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
@@ -153,7 +157,7 @@ function ResponsiveAppBar() {
 								</MenuItem>
 							))}
 						</Menu>
-					</Box>
+					</Box> */}
 				</Toolbar>
 			</Container>
 		</AppBar>

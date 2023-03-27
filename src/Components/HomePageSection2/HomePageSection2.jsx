@@ -15,7 +15,7 @@ import ClientCarousel from "./ClientCarousel/ClientCarousel";
 function HomePageSection2() {
 	return (
 		<>
-			<Container style={{ border: "solid", borderWidth: "1px" }}>
+			<Container>
 				<Grid2 container>
 					<Grid2 item xs={3}>
 						<Paper elevation={3}>
