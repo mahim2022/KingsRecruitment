@@ -32,7 +32,7 @@ const data = [
 
 function WeServeSection2() {
 	return (
-		<Container style={{ paddingTop: "3%" }}>
+		<Container style={{ paddingTop: "3%", paddingBottom: "3%" }}>
 			<Grid2 container spacing={4}>
 				{data.map((cur) => {
 					return (

@@ -7,8 +7,18 @@ import FooterSection3 from "./FooterSection3/FooterSection3";
 
 function FooterSection() {
 	return (
-		<div style={{ backgroundColor: "#1F242A" }}>
-			<Grid container spacing={40}>
+		<div
+			style={{
+				backgroundColor: "#1F242A",
+				textAlign: "center",
+				display: "flex",
+				justifyContent: "center",
+				alignItems: "center",
+				display: "grid",
+				placeItems: "center",
+			}}
+		>
+			<Grid container spacing={10}>
 				<Grid item sx={4}>
 					<h1>Explore</h1>
 
@@ -19,8 +29,8 @@ function FooterSection() {
 					sx={4}
 					style={{
 						width: "500px",
-						// height: "500px",
-						height: "fit-content",
+						// // height: "500px",
+						// height: "fit-content",
 					}}
 				>
 					<FooterSection2></FooterSection2>

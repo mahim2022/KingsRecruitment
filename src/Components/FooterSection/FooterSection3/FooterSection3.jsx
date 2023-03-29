@@ -6,7 +6,7 @@ function FooterSection3() {
 	return (
 		<div>
 			<h1>Newsletter</h1>
-			<Typography style={{ width: "60%" }}>
+			<Typography style={{}}>
 				Enter your email address here always to be updated. We promise not to
 				spam!
 			</Typography>
