@@ -14,7 +14,7 @@ function HomePageSection1() {
 			<Grid2 item xs={12}>
 				<ResponsiveCarousel imagesArray={imagesArray}></ResponsiveCarousel>
 			</Grid2>
-			<Grid2 item xs={12}>
+			<Grid2 item xs={12} style={{borderStyle:"solid",borderWidth:"1px"}}>
 				<HomepageOverlay></HomepageOverlay>
 			</Grid2>
 			<Grid2 item xs={12}>

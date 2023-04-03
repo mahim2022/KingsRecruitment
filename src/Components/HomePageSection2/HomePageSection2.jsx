@@ -11,48 +11,29 @@ import CardSection from "./CardSection/CardSection";
 import ClientCarousel from "./ClientCarousel/ClientCarousel";
 // import mysvg from "./backgroud.svg";
 // import { ReactComponent as image } from "./backgroud.svg??raw&throwIfNamespace=false";
+var gridInfo=[{img:manpower,head:"Manpower Consultancy",innerText:"At kings, we leverage our unparalleled expertise of"},{img:employee,head:"Employment Assistance",innerText:"We always prefer selection of applicant either by oral"},{img:visaAssistance,head:"Ticket Assistance",innerText:"We always prefer selection of applicant either by oral"},{img:ticket,head:"VISA ASSISTANCE",innerText:"	Following are the types of visas that we provide services to :"}]
 
 function HomePageSection2() {
 	return (
 		<>
-			<Container>
-				<Grid2 container>
-					<Grid2 item xs={3}>
-						<Paper elevation={3}>
-							<img src={manpower}></img>
-							<Typography variant="h4">Manpower Consultancy</Typography>
+			<Container  maxWidth={'lg'} >
+				<Grid2 container spacing={3}>
+
+
+					{gridInfo.map(cur=>{return<Grid2 item xs={4}>
+						<Paper elevation={3} style={{width:"350px",height:"360px" ,textAlign:"center"}}>
+	<						img src={cur.img} style={{paddingTop:"2%"}}></img>
+							<Typography variant="h4">{cur.head}</Typography>
 							<Typography variant="h5">
-								At kings, we leverage our unparalleled expertise of
-							</Typography>
-						</Paper>
-					</Grid2>
-					<Grid2 item xs={4}>
-						<Paper elevation={3}>
-							<img src={employee}></img>
-							<Typography variant="h4">Employment Assistance</Typography>
-							<Typography variant="h5">
-								We always prefer selection of applicant either by oral
-							</Typography>
-						</Paper>
-					</Grid2>
-					<Grid2 item xs={4}>
-						<Paper elevation={3}>
-							<img src={visaAssistance}></img>
-							<Typography variant="h4">Ticket Assistance</Typography>
-							<Typography variant="h5">
-								We always prefer selection of applicant either by oral
-							</Typography>
-						</Paper>
-					</Grid2>
-					<Grid2 item xs={4}>
-						<Paper elevation={3}>
-							<img src={ticket}></img>
-							<Typography variant="h4">VISA ASSISTANCE</Typography>
-							<Typography variant="h5">
-								Following are the types of visas that we provide services to :
-							</Typography>
-						</Paper>
-					</Grid2>
+		{cur.innerText}
+	</Typography>
+</Paper>
+</Grid2>
+					 })}
+
+
+
+				
 					<Grid2 item xs={8}>
 						<img src={uniqueService}></img>
 					</Grid2>

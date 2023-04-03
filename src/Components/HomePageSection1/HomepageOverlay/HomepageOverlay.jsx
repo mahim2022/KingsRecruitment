@@ -21,6 +21,8 @@ function HomepageOverlay() {
 					// border: "solid",
 					// width: "fit-content",
 					// height: "200px",
+					width:"fit-content",
+					height:"fit-content"
 				}}
 			>
 				<Grid2 item xs={12}>

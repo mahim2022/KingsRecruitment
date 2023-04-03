@@ -13,7 +13,7 @@ function App() {
 		<div>
 			<ResponsiveAppBar></ResponsiveAppBar>
 			<Routes>
-				<Route path="/" element={<HomePage />} />
+				<Route path="/" element={<HomePage  />} />
 				<Route path="weserve" element={<WeServeSection />} />
 				<Route path="recruitment" element={<RecruitementProcess />} />
 				<Route path="contactus" element={<ContactUs />} />
