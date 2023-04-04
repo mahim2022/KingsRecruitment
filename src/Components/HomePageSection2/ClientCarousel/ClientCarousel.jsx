@@ -20,6 +20,7 @@ function ClientCarousel() {
 				// display: "flex",
 				// justifyContent: "center",
 				// alignItems: "center",
+				paddingBottom:"5%"
 			}}
 		>
 			<Typography

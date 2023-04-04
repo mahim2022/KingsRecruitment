@@ -12,6 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import { useNavigate } from "react-router-dom";
 
 const pages = ["We Serve", "Global", "Recruitement Process", "Contact Us"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -27,8 +28,15 @@ function ResponsiveAppBar() {
 		setAnchorElUser(event.currentTarget);
 	};
 
-	const handleCloseNavMenu = () => {
+
+	const navigate=useNavigate();
+	const handleCloseNavMenu = (event,page) => {
 		setAnchorElNav(null);
+		// console.log(event)
+		const data=page.split('').filter(e => e.trim().length).join('')
+		console.log(data)
+		navigate(data);
+
 	};
 
 	const handleCloseUserMenu = () => {
@@ -121,7 +129,7 @@ function ResponsiveAppBar() {
 						{pages.map((page) => (
 							<Button
 								key={page}
-								onClick={handleCloseNavMenu}
+								onClick={(event)=>handleCloseNavMenu(event,page)}
 								sx={{ my: 2, color: "black", display: "block" }}
 							>
 								{page}

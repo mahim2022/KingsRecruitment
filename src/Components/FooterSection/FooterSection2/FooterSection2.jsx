@@ -9,22 +9,22 @@ function FooterSection2() {
 	return (
 		<div style={{ width: "100%" }}>
 			<Link href="#" underline="none">
-				<h1>Link</h1>
+				<h1 style={{color:"white"}}>Kings Trade International</h1>
 			</Link>
-			<Typography>
+			<Typography sx={{color:"white"}}>
 				Bashati Horizon, Flat - A12, Room No. - 02 House No. 21, Road No. - 17,
 				Banani R/A, Dhaka-1213.
 			</Typography>
 			<Link href="#" underline="none">
-				<h1>Link</h1>
+				<h1 style={{color:"white"}}>Site Office</h1>
 			</Link>
-			<Typography>
+			<Typography sx={{color:"white"}}>
 				Rupayan Trade Center (11th Floor) 114, Kazi Nazrul Islam Avenue Bangla
 				Motor, Dhaka-1000.
 			</Typography>
-			<Typography>Cell:01796288649,91629098193</Typography>
+			<Typography sx={{color:"white"}}>Cell:01796288649,91629098193</Typography>
 			<Link href="#" underline="none">
-				<Typography>naimulmushfiq98@gmail.com</Typography>
+				<Typography sx={{color:"white"}}>naimulmushfiq98@gmail.com</Typography>
 			</Link>
 			<ButtonGroup
 				variant="contained"

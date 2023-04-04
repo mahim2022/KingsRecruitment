@@ -10,11 +10,12 @@ import AboutUsSection from "../AboutUsSection/AboutUsSection";
 
 function HomePageSection1() {
 	return (
+		
 		<Grid2 container spacing={0}>
 			<Grid2 item xs={12}>
 				<ResponsiveCarousel imagesArray={imagesArray}></ResponsiveCarousel>
 			</Grid2>
-			<Grid2 item xs={12} style={{borderStyle:"solid",borderWidth:"1px"}}>
+			<Grid2 item xs={12} >
 				<HomepageOverlay></HomepageOverlay>
 			</Grid2>
 			<Grid2 item xs={12}>

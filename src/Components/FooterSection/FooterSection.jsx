@@ -5,23 +5,20 @@ import ButtonGroup1 from "./ButtonGroup/ButtonGroup1";
 import FooterSection2 from "./FooterSection2/FooterSection2";
 import FooterSection3 from "./FooterSection3/FooterSection3";
 
+
+// backgroundColor: "#1F242A",
+
+
 function FooterSection() {
 	return (
-		<div
-			style={{
-				backgroundColor: "#1F242A",
-				textAlign: "center",
-				display: "flex",
-				justifyContent: "center",
-				alignItems: "center",
-				display: "grid",
-				placeItems: "center",
-			}}
-		>
+		<Container maxWidth={"xl"} sx={{textAlign:"center", backgroundColor: "#1F242A",}}>
 			<Grid container spacing={10}>
-				<Grid item sx={4}>
-					<h1>Explore</h1>
-
+				<Grid item sx={4} style={{
+						width: "500px",
+						// // height: "500px",
+						// height: "fit-content",
+					}}>
+					<h1 style={{color:"white"}}>Explore</h1>
 					<ButtonGroup1></ButtonGroup1>
 				</Grid>
 				<Grid
@@ -39,7 +36,7 @@ function FooterSection() {
 					<FooterSection3></FooterSection3>
 				</Grid>
 			</Grid>
-		</div>
+		</Container>
 	);
 }
 
